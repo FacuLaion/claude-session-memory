@@ -41,7 +41,7 @@ if [ ! -f "$SCRIPT_DIR/src/conversation-logger.cjs" ]; then
   SCRIPT_DIR="$TEMP_DIR"
   mkdir -p "$TEMP_DIR/src" "$TEMP_DIR/skills"
 
-  BASE_URL="https://raw.githubusercontent.com/laionfacu/claude-session-memory/main"
+  BASE_URL="https://raw.githubusercontent.com/FacuLaion/claude-session-memory/main"
   curl -fsSL "$BASE_URL/src/conversation-logger.cjs" -o "$TEMP_DIR/src/conversation-logger.cjs"
   curl -fsSL "$BASE_URL/src/autosave-checker.cjs" -o "$TEMP_DIR/src/autosave-checker.cjs"
   curl -fsSL "$BASE_URL/src/session-context-loader.cjs" -o "$TEMP_DIR/src/session-context-loader.cjs"
